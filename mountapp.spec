@@ -32,7 +32,6 @@ napisana w GTK+.
 %setup -q
 
 %build
-LDFLAGS="-s"; export LDFLAGS
 %configure
 %{__make}
 

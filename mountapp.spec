@@ -46,13 +46,11 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} DESTDIR=$RPM_BUILD_ROOT install
 
-gzip -9nf TODO README THANKS AUTHORS NEWS ChangeLog SMB-Notes
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc TODO README THANKS AUTHORS NEWS ChangeLog SMB-Notes
 %attr(755,root,root) %{_bindir}/*
 %{_datadir}/mount.app

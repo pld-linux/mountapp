@@ -35,7 +35,7 @@ napisana w GTK+.
 %build
 LDFLAGS="-s"; export LDFLAGS
 %configure
-make
+%{__make}
 
 %install
 rm -fr $RPM_BUILD_ROOT

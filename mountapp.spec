@@ -6,6 +6,7 @@ Release:	3
 License:	GPL
 Group:		X11/Window Managers/Tools
 Source0:	http://dl.sourceforge.net/mountapp/%{name}-%{version}.tar.gz
+# Source0-md5:	baa3ab59c6f53fbb1c4549f1db4d6f0d
 URL:		http://mountapp.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake

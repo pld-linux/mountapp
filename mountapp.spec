@@ -5,7 +5,7 @@ Release:	1
 License:	GPL
 Group:		X11/Window Managers/Tools
 Group(pl):	X11/Zarz±dcy Okien/Narzêdzia
-Source0:	http://mountapp.sourceforge.net/%{name}-%{version}.tar.gz
+Source0:	ftp://download.sourceforge.net/pub/sourceforge/%{name}-%{version}.tar.gz
 URL:		http://mountapp.sourceforge.net/
 BuildRequires:	libPropList-devel
 BuildRequires:	gtk+-devel

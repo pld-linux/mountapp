@@ -7,12 +7,12 @@ License:	GPL
 Group:		X11/Window Managers/Tools
 Source0:	ftp://download.sourceforge.net/pub/sourceforge/%{name}-%{version}.tar.gz
 URL:		http://mountapp.sourceforge.net/
-BuildRequires:	libPropList-devel
+BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRequires:	gtk+-devel
 BuildRequires:	libjpeg-devel
+BuildRequires:	libPropList-devel
 BuildRequires:	libtiff-devel
-BuildRequires:	automake
-BuildRequires:	autoconf
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Obsoletes:	MountApp
 
@@ -34,8 +34,10 @@ konfiguruj±c± napisana w GTK+.
 %setup -q
 
 %build
+rm -f missing
 aclocal
 autoconf
+automake -a -c
 %configure
 %{__make}
 

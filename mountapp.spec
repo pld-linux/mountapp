@@ -16,7 +16,6 @@ BuildRequires:	libtiff-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Obsoletes:	MountApp
 
-%define		_prefix		/usr/X11R6
 
 %description
 This is a Window Maker dock app which allows you to browse all your

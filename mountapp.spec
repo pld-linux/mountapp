@@ -1,10 +1,11 @@
 Summary:	A Window Maker dock app which simplies managing mountable devices
-Summary(pl):	Aplikacja dokowalna dla Window Maker'a do zarz±dzania urz±dzeniami mountowalnymi
+Summary(pl):	Aplikacja dokowalna dla Window Makera do zarz±dzania urz±dzeniami mountowalnymi
 Name:		mountapp
 Version:	2.7
-Release:	2
+Release:	3
 License:	GPL
 Group:		X11/Window Managers/Tools
+Group(de):	X11/Fenstermanager/Werkzeuge
 Group(pl):	X11/Zarz±dcy Okien/Narzêdzia
 Source0:	ftp://download.sourceforge.net/pub/sourceforge/%{name}-%{version}.tar.gz
 URL:		http://mountapp.sourceforge.net/
@@ -20,16 +21,16 @@ Obsoletes:	MountApp
 %define		_prefix		/usr/X11R6
 
 %description
-This is a Window Maker dock app which allows you to browse all your mount
-points and to mount/unmount devices in a simple point and click manner.
-Double clicking on the background will bring up a configuration app written
-with GTK+.
+This is a Window Maker dock app which allows you to browse all your
+mount points and to mount/unmount devices in a simple point and click
+manner. Double clicking on the background will bring up a
+configuration app written with GTK+.
 
 %description -l pl
 MountApp to aplikacja dokowalna Window Makera, pozwalaj±ca przegl±daæ
 punkty montowania i w prosty sposób (wska¿ i kliknij) montowaæ i
-odmontowywaæ je. Podwójne klikniêcie w tle wywo³a aplikacje konfiguruj±c±
-napisana w GTK+.
+odmontowywaæ je. Podwójne klikniêcie w tle wywo³a aplikacje
+konfiguruj±c± napisana w GTK+.
 
 %prep
 %setup -q
@@ -41,7 +42,7 @@ autoconf
 %{__make}
 
 %install
-rm -fr $RPM_BUILD_ROOT
+rm -rf $RPM_BUILD_ROOT
 
 %{__make} DESTDIR=$RPM_BUILD_ROOT install
 

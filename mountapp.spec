@@ -27,8 +27,8 @@ configuration app written with GTK+.
 %description -l pl
 MountApp to aplikacja dokowalna Window Makera, pozwalaj±ca przegl±daæ
 punkty montowania i w prosty sposób (wska¿ i kliknij) montowaæ i
-odmontowywaæ je. Podwójne klikniêcie w tle wywo³a aplikacje
-konfiguruj±c± napisana w GTK+.
+odmontowywaæ je. Podwójne klikniêcie wywo³a w tle aplikacjê
+konfiguruj±c± napisan± w GTK+.
 
 %prep
 %setup -q

@@ -40,7 +40,7 @@ make
 %install
 rm -fr $RPM_BUILD_ROOT
 
-make DESTDIR=$RPM_BUILD_ROOT install
+%{__make} DESTDIR=$RPM_BUILD_ROOT install
 
 gzip -9nf TODO README THANKS AUTHORS NEWS ChangeLog SMB-Notes
 

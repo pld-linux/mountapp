@@ -2,11 +2,12 @@ Summary:	A Window Maker dock app which simplies managing mountable devices
 Summary(pl):	Aplikacja dokowalna dla Window Makera do zarz±dzania urz±dzeniami mountowalnymi
 Name:		mountapp
 Version:	3.0
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Window Managers/Tools
 Source0:	http://dl.sourceforge.net/mountapp/%{name}-%{version}.tar.gz
 # Source0-md5:	5e507a88e9144ce241a0d7261d4a1d68
+Source1:	%{name}.desktop
 Patch0:		%{name}-WINGs.patch
 URL:		http://mountapp.sourceforge.net/
 BuildRequires:	WindowMaker-devel >= 0.80
@@ -43,9 +44,12 @@ konfiguruj±c± napisan± w GTK+.
 
 %install
 rm -rf $RPM_BUILD_ROOT
+install -d $RPM_BUILD_ROOT%{_desktopdir}/docklets
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT 
+
+install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}/docklets
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -55,3 +59,4 @@ rm -rf $RPM_BUILD_ROOT
 %doc TODO README THANKS AUTHORS NEWS ChangeLog 
 %attr(755,root,root) %{_bindir}/*
 %{_datadir}/mount.app
+%{_desktopdir}/docklets/*.desktop

@@ -5,8 +5,6 @@ Version:	2.7
 Release:	3
 License:	GPL
 Group:		X11/Window Managers/Tools
-Group(de):	X11/Fenstermanager/Werkzeuge
-Group(pl):	X11/Zarz±dcy Okien/Narzêdzia
 Source0:	ftp://download.sourceforge.net/pub/sourceforge/%{name}-%{version}.tar.gz
 URL:		http://mountapp.sourceforge.net/
 BuildRequires:	libPropList-devel

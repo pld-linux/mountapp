@@ -5,7 +5,7 @@ Version:	2.7
 Release:	3
 License:	GPL
 Group:		X11/Window Managers/Tools
-Source0:	ftp://download.sourceforge.net/pub/sourceforge/%{name}-%{version}.tar.gz
+Source0:	http://dl.sourceforge.net/mountapp/%{name}-%{version}.tar.gz
 URL:		http://mountapp.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -15,7 +15,6 @@ BuildRequires:	libPropList-devel
 BuildRequires:	libtiff-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Obsoletes:	MountApp
-
 
 %description
 This is a Window Maker dock app which allows you to browse all your

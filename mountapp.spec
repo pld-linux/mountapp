@@ -1,18 +1,19 @@
 Summary:	A Window Maker dock app which simplies managing mountable devices
 Summary(pl):	Aplikacja dokowalna dla Window Makera do zarz±dzania urz±dzeniami mountowalnymi
 Name:		mountapp
-Version:	2.7
-Release:	3
+Version:	3.0
+Release:	1
 License:	GPL
 Group:		X11/Window Managers/Tools
 Source0:	http://dl.sourceforge.net/mountapp/%{name}-%{version}.tar.gz
-# Source0-md5:	baa3ab59c6f53fbb1c4549f1db4d6f0d
+# Source0-md5:	5e507a88e9144ce241a0d7261d4a1d68
+Patch0:		%{name}-WINGs.patch
 URL:		http://mountapp.sourceforge.net/
+BuildRequires:	WindowMaker-devel >= 0.80
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gtk+-devel
 BuildRequires:	libjpeg-devel
-BuildRequires:	libPropList-devel
 BuildRequires:	libtiff-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Obsoletes:	MountApp
@@ -31,6 +32,7 @@ konfiguruj±c± napisana w GTK+.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 rm -f missing
@@ -43,13 +45,14 @@ rm -f missing
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} DESTDIR=$RPM_BUILD_ROOT install
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT 
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc TODO README THANKS AUTHORS NEWS ChangeLog SMB-Notes
+%doc TODO README THANKS AUTHORS NEWS ChangeLog 
 %attr(755,root,root) %{_bindir}/*
 %{_datadir}/mount.app

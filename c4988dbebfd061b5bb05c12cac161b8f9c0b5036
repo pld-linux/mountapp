@@ -1,0 +1,4 @@
+- changed name from MountApp to mountapp,
+- updated to 2.7 (updated alsdo URL and Source url),
+- updated BuildRequires list,
+- spec rewrited in PLD style.

@@ -1,0 +1,13 @@
+--- mountapp-3.0/configure.in.orig	2004-02-05 23:34:52.000000000 +0100
++++ mountapp-3.0/configure.in	2004-02-05 23:36:49.000000000 +0100
+@@ -101,8 +101,8 @@
+ dnl        Check for libWINGs (replaces libPropList)
+ dnl =====================================================
+ 
+-AC_CHECK_LIB(WINGs, WMGetFromPLString,
+-    [LIBPL_LIBS=-lWINGs LIBPL_INC_PATH="" missing=no],
++AC_CHECK_LIB(WUtil, WMGetFromPLString,
++    [LIBPL_LIBS=-lWUtil LIBPL_INC_PATH="/usr/include/WINGs" missing=no],
+     [missing=yes])
+ 
+ if test "$missing" = yes; then

@@ -1,7 +1,8 @@
 Summary:	A Window Maker dock app which simplies managing mountable devices
+Summary(pl):	Aplikacja dokowalna dla Window Maker'a do zarz±dzania urz±dzeniami mountowalnymi
 Name:		mountapp
 Version:	2.7
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Window Managers/Tools
 Group(pl):	X11/Zarz±dcy Okien/Narzêdzia
@@ -11,6 +12,8 @@ BuildRequires:	libPropList-devel
 BuildRequires:	gtk+-devel
 BuildRequires:	libjpeg-devel
 BuildRequires:	libtiff-devel
+BuildRequires:	automake
+BuildRequires:	autoconf
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Obsoletes:	MountApp
 
@@ -32,6 +35,8 @@ napisana w GTK+.
 %setup -q
 
 %build
+aclocal
+autoconf
 %configure
 %{__make}
 

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=mountapp
+Comment=Mounting and unmounting filesystems dockapp
+Comment[pl]=Aplet montujący i odmontowywujący systemy plików
+Exec=mount.app
+Terminal=false
+Type=Application
+Categories=Applet;
+NotShowIn=GNOME;KDE;
+# vi: encoding=utf-8

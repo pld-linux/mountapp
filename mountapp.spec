@@ -15,8 +15,8 @@ BuildRequires:	automake
 BuildRequires:	gtk+-devel
 BuildRequires:	libjpeg-devel
 BuildRequires:	libtiff-devel
-BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Obsoletes:	MountApp
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 This is a Window Maker dock app which allows you to browse all your
@@ -35,7 +35,6 @@ konfiguruj±c± napisana w GTK+.
 %patch0 -p1
 
 %build
-rm -f missing
 %{__aclocal}
 %{__autoconf}
 %{__automake}

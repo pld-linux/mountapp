@@ -1,5 +1,5 @@
 Summary:	A Window Maker dock app which simplies managing mountable devices
-Summary(pl):	Aplikacja dokowalna dla Window Makera do zarz±dzania urz±dzeniami mountowalnymi
+Summary(pl.UTF-8):   Aplikacja dokowalna dla Window Makera do zarzÄ…dzania urzÄ…dzeniami mountowalnymi
 Name:		mountapp
 Version:	3.0
 Release:	2
@@ -25,11 +25,11 @@ mount points and to mount/unmount devices in a simple point and click
 manner. Double clicking on the background will bring up a
 configuration app written with GTK+.
 
-%description -l pl
-MountApp to aplikacja dokowalna Window Makera, pozwalaj±ca przegl±daæ
-punkty montowania i w prosty sposób (wska¿ i kliknij) montowaæ i
-odmontowywaæ je. Podwójne klikniêcie wywo³a w tle aplikacjê
-konfiguruj±c± napisan± w GTK+.
+%description -l pl.UTF-8
+MountApp to aplikacja dokowalna Window Makera, pozwalajÄ…ca przeglÄ…daÄ‡
+punkty montowania i w prosty sposÃ³b (wskaÅ¼ i kliknij) montowaÄ‡ i
+odmontowywaÄ‡ je. PodwÃ³jne klikniÄ™cie wywoÅ‚a w tle aplikacjÄ™
+konfigurujÄ…cÄ… napisanÄ… w GTK+.
 
 %prep
 %setup -q

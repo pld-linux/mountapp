@@ -1,5 +1,5 @@
 Summary:	A Window Maker dock app which simplies managing mountable devices
-Summary(pl.UTF-8):   Aplikacja dokowalna dla Window Makera do zarządzania urządzeniami mountowalnymi
+Summary(pl.UTF-8):	Aplikacja dokowalna dla Window Makera do zarządzania urządzeniami mountowalnymi
 Name:		mountapp
 Version:	3.0
 Release:	2
